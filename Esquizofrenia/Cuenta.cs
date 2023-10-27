@@ -8,8 +8,8 @@ namespace Esquizofrenia
 {
     internal class Cuenta
     {
-        private int idMesa { get; set; }
-        private float precioTotal { get; set; }
+        public int idMesa { get; set; }
+        public float precioTotal { get; set; }
         private DateTime fecha { get; set; }
     }
 }

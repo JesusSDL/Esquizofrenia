@@ -8,7 +8,7 @@ namespace Esquizofrenia
 {
     internal class Pedido
     {
-        private string detalle { get; set; }
-        private float precio { get; set; }
+        public string detalle { get; set; }
+        public float precio { get; set; }
     }
 }
