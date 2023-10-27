@@ -1,0 +1,6 @@
+C:\Users\MFJisusCristFH\source\repos\Esquizofrenia\bin\Debug\Esquizofrenia.dll
+C:\Users\MFJisusCristFH\source\repos\Esquizofrenia\bin\Debug\Esquizofrenia.pdb
+C:\Users\MFJisusCristFH\source\repos\Esquizofrenia\obj\Debug\Esquizofrenia.csproj.AssemblyReference.cache
+C:\Users\MFJisusCristFH\source\repos\Esquizofrenia\obj\Debug\Esquizofrenia.csproj.CoreCompileInputs.cache
+C:\Users\MFJisusCristFH\source\repos\Esquizofrenia\obj\Debug\Esquizofrenia.dll
+C:\Users\MFJisusCristFH\source\repos\Esquizofrenia\obj\Debug\Esquizofrenia.pdb
