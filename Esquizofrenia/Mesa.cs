@@ -10,11 +10,6 @@ namespace Esquizofrenia
     {
         public int id { get; set; }
         public bool estado { get; set; }
-        
-        public void moviendoMesa()
-        {
-
-        }
         public Mesa(int id, bool estado)
         {
             this.id = id;
@@ -24,5 +19,10 @@ namespace Esquizofrenia
         {
             this.id = id;
         }
+        public void moviendoMesa()
+        {
+
+        }
+     
     }
 }

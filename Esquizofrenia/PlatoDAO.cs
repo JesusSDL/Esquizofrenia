@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -42,14 +43,28 @@ namespace Esquizofrenia
         public List<Plato> sauronPlatos()
         {
             List<Plato> losPlatazos = new List<Plato>();
-            string queryLosPlatos = "SELECT nombre, tamanio, precio FROM plato;";
+            string queryLosPlatos = "SELECT nombre, tamaño, precio FROM plato;";
             MySqlDataReader verSauron = null;
             try
             {
                 MySqlCommand comando = new MySqlCommand(queryLosPlatos);
                 comando.Connection = conectarse();
                 verSauron = comando.ExecuteReader();
+                while (verSauron.Read())
+                {
+                    string nombre = verSauron.GetString("nombre");
+                    string tamanio = verSauron.GetString("tamaño");
+                    float precio = verSauron.GetFloat("precio");
+                    Plato p = new Plato(nombre, tamanio, precio);
+                    losPlatazos.Add(p);
+                }
 
             }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            return losPlatazos;
+        }
     }
 }

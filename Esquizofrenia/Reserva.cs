@@ -18,5 +18,10 @@ namespace Esquizofrenia
             this.fecha = fecha;
             this.hora = hora;
         }
+        public Reserva(DateTime fecha, string hora)
+        {
+            this.fecha = fecha;
+            this.hora = hora;
+        }
     }
 }
