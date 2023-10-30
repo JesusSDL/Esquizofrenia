@@ -26,7 +26,7 @@ namespace Esquizofrenia
             catch (MySqlException error)
             {
                 Console.WriteLine(error.ToString());
-                return null;
+                
             }
             return c;
         }

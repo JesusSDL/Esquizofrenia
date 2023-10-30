@@ -17,6 +17,10 @@ namespace Esquizofrenia
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
+            
+            Cliente c = new Cliente("jesis", "admin");
+            ClienteDAO cDAO = new ClienteDAO();
+            
         }
     }
 }
