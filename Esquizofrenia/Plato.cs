@@ -8,15 +8,9 @@ namespace Esquizofrenia
 {
     internal class Plato
     {
-        public string nombre { get; set; }
-        public int tamaño { get; set; }
-        public float precio { get; set; }
+        private string nombre { get; set; }
+        private int tamaño { get; set; }
+        private float precio { get; set; }
 
-        public Plato(string nombre, int tamaño, float precio)
-        {
-            this.nombre = nombre;
-            this.tamaño = tamaño;
-            this.precio = precio;
-        }
     }
 }

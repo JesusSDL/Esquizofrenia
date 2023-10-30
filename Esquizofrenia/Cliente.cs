@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Esquizofrenia
 {
-    internal class Cliente
+    public class Cliente
     {
         public string nombreApellido;
         public int dni { get; set; }

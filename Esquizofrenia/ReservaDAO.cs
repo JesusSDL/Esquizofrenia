@@ -1,5 +1,5 @@
-﻿using MySql.Data.MySqlClient;
-using System;
+﻿using System;
+using MySql.Data.MySqlClient;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -40,10 +40,10 @@ namespace Esquizofrenia
             comando.Parameters.Add(new MySqlParameter("@hora", reservita.hora));
             comando.Parameters.Add(new MySqlParameter("@correo", cli.correoElectronico));
             comando.ExecuteNonQuery();
-            string mesaFalse = "INSERT INTO mesa FROM esquizofrenia (estado) VALUES (@estado);";
+            string mesaFalse = "UPDATE mesa SET estado = @estado WHERE id_mesa = @id ;";
             MySqlCommand comando2 = new MySqlCommand(mesaFalse, conectarse());
-            bool ponerEstado = false;
-            comando.Parameters.Add(new MySqlParameter("@estado", ponerEstado));
+            comando.Parameters.Add(new MySqlParameter("@estado", "reservada"));
+            comando.Parameters.Add(new MySqlParameter("@id", mesita.id));
             comando2.ExecuteNonQuery();
         }
     }
