@@ -47,6 +47,19 @@ namespace Esquizofrenia
             command.Parameters.Add(new MySqlParameter("@password", cliente.password));
             command.ExecuteNonQuery();
         }
+        public void agregarClienteSinNombreApellido(Cliente cliente)
+        {
+            MySqlConnection c = null;
+            c = conectarse();
+            string insert = "INSERT INTO cliente (dni, user, password) VALUES ( @dni, @user, @password);";
+
+            MySqlCommand command = new MySqlCommand(insert, c);
+            command.Parameters.Add(new MySqlParameter("@dni", cliente.dni));
+            command.Parameters.Add(new MySqlParameter("@user", cliente.user));
+            command.Parameters.Add(new MySqlParameter("@password", cliente.password));
+            command.ExecuteNonQuery();
+        }
+
         public bool logIn(Cliente cli)
         {
             string existeCliente = "SELECT user, password FROM cliente WHERE user = @user and password = @pwd;";
@@ -55,10 +68,6 @@ namespace Esquizofrenia
             comando.Parameters.Add(new MySqlParameter("@pwd", cli.password));
             return comando.ExecuteNonQuery() == 1;
         }
-
-
-
-
     }
     
 }

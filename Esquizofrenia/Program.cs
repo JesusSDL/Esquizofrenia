@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Esquizofrenia
+namespace Pantallas
 {
     internal static class Program
     {
@@ -17,15 +17,6 @@ namespace Esquizofrenia
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
-            
-            Cliente c = new Cliente("jesusdl", 123456);
-            ReservaDAO  cDAO = new ReservaDAO();
-            Mesa mesita = new Mesa(1);
-            DateTime Hoy = DateTime.Now;
-            Reserva reservita = new Reserva(Hoy, "13:00");
-            cDAO.reservandoMesa(c, mesita, reservita);
-            
-           
         }
     }
 }

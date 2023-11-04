@@ -30,12 +30,19 @@ namespace Esquizofrenia
         {
             this.numTelefono = numTelefono;
              this.correoElectronico = correoElectronico;
-
+            
         }
-        public Cliente(string user, string pwd)
+        public Cliente(string user, string pwd, int dni)
         {
             this.user = user;
             this.password = pwd;
+            this.dni = dni;
+
+        }
+        public Cliente(string user, string password)
+        {
+            this.user = user;
+            this.password = password;
 
         }
         public void modificarEstadoMesa()

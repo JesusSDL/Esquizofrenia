@@ -11,6 +11,7 @@ namespace Esquizofrenia
     {
         public void reservandoMesa(Cliente cli, Mesa mesita, Reserva reservita)
         {
+            
             string clienteReserva = "INSERT INTO reserva (num_telefono, fecha, hora, correo, mesa_id_mesa ) VALUES (@num_telefono, @fecha, @hora, @correo, @id);";
             MySqlCommand comando = new MySqlCommand(clienteReserva, conectarse());
             comando.Parameters.Add(new MySqlParameter("@num_telefono", cli.numTelefono));

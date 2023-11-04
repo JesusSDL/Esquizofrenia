@@ -115,15 +115,46 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\PantallaRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PantallaRegister.designer.cs">
+      <DependentUpon>PantallaRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PantallaReservacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PantallaReservacion.designer.cs">
+      <DependentUpon>PantallaReservacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PantallaSideBar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PantallaSideBar.designer.cs">
+      <DependentUpon>PantallaSideBar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Mesa.cs" />
     <Compile Include="MesaDAO.cs" />
     <Compile Include="Pedido.cs" />
     <Compile Include="Plato.cs" />
+    <Compile Include="PlatoDAO.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Recepcionista.cs" />
     <Compile Include="Reserva.cs" />
     <Compile Include="ReservaDAO.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PantallaRegister.resx">
+      <DependentUpon>PantallaRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PantallaReservacion.resx">
+      <DependentUpon>PantallaReservacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PantallaSideBar.resx">
+      <DependentUpon>PantallaSideBar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -134,6 +165,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <None Include="packages.config" />
+    <None Include="Pantallas.csproj" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
