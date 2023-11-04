@@ -68,6 +68,7 @@ namespace Esquizofrenia
             comando.Parameters.Add(new MySqlParameter("@pwd", cli.password));
             return comando.ExecuteNonQuery() == 1;
         }
+        
     }
     
 }

@@ -34,10 +34,11 @@ namespace Esquizofrenia
         public List<Mesa> traerMesasDispo()
         {
             List<Mesa> lasMesasDispo = new List<Mesa>();
-            string queryMesasDispo = "SELECT id_mesa WHERE estado == 'disponible';";
-            MySqlDataReader verSauron = null;
+            string queryMesasDispo = "SELECT id_mesa FROM mesa WHERE estado = 'disponible';";
+           
             try
             {
+                MySqlDataReader verSauron = null;
                 MySqlCommand comando = new MySqlCommand(queryMesasDispo);
                 comando.Connection = conectarse();
                 verSauron = comando.ExecuteReader();
