@@ -141,9 +141,9 @@
             this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassword.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.txtPassword.Location = new System.Drawing.Point(0, 12);
+            this.txtPassword.Location = new System.Drawing.Point(3, 12);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(297, 19);
+            this.txtPassword.Size = new System.Drawing.Size(291, 19);
             this.txtPassword.TabIndex = 6;
             // 
             // label4
@@ -173,9 +173,9 @@
             this.txtUser.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUser.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.txtUser.Location = new System.Drawing.Point(0, 12);
+            this.txtUser.Location = new System.Drawing.Point(3, 12);
             this.txtUser.Name = "txtUser";
-            this.txtUser.Size = new System.Drawing.Size(297, 19);
+            this.txtUser.Size = new System.Drawing.Size(291, 19);
             this.txtUser.TabIndex = 6;
             this.txtUser.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
@@ -213,6 +213,9 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
             this.Text = "Form1";
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseMove);
+            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseUp);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
