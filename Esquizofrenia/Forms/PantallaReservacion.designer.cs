@@ -140,7 +140,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label4.Location = new System.Drawing.Point(12, 167);
+            this.label4.Location = new System.Drawing.Point(22, 123);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(116, 16);
             this.label4.TabIndex = 7;
@@ -151,7 +151,7 @@
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(33)))), ((int)(((byte)(38)))));
             this.panel4.Controls.Add(this.txtNumeroTelefono);
             this.panel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(33)))), ((int)(((byte)(38)))));
-            this.panel4.Location = new System.Drawing.Point(12, 186);
+            this.panel4.Location = new System.Drawing.Point(22, 142);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(217, 44);
             this.panel4.TabIndex = 8;
@@ -161,7 +161,7 @@
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(33)))), ((int)(((byte)(38)))));
             this.panel5.Controls.Add(this.txtCorreo);
             this.panel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(33)))), ((int)(((byte)(38)))));
-            this.panel5.Location = new System.Drawing.Point(12, 262);
+            this.panel5.Location = new System.Drawing.Point(22, 218);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(217, 44);
             this.panel5.TabIndex = 9;
@@ -183,7 +183,7 @@
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(33)))), ((int)(((byte)(38)))));
             this.panel6.Controls.Add(this.txtFecha);
             this.panel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(33)))), ((int)(((byte)(38)))));
-            this.panel6.Location = new System.Drawing.Point(12, 338);
+            this.panel6.Location = new System.Drawing.Point(22, 294);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(82, 44);
             this.panel6.TabIndex = 10;
@@ -198,13 +198,14 @@
             this.txtFecha.Name = "txtFecha";
             this.txtFecha.Size = new System.Drawing.Size(82, 19);
             this.txtFecha.TabIndex = 6;
+            this.txtFecha.TextChanged += new System.EventHandler(this.txtFecha_TextChanged);
             // 
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(33)))), ((int)(((byte)(38)))));
             this.panel7.Controls.Add(this.txtHora);
             this.panel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(33)))), ((int)(((byte)(38)))));
-            this.panel7.Location = new System.Drawing.Point(114, 338);
+            this.panel7.Location = new System.Drawing.Point(124, 294);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(115, 44);
             this.panel7.TabIndex = 11;
@@ -225,7 +226,7 @@
             this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(33)))), ((int)(((byte)(38)))));
             this.panel8.Controls.Add(this.txtMesaSeleccion);
             this.panel8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(33)))), ((int)(((byte)(38)))));
-            this.panel8.Location = new System.Drawing.Point(12, 416);
+            this.panel8.Location = new System.Drawing.Point(22, 372);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(82, 44);
             this.panel8.TabIndex = 9;
@@ -248,9 +249,9 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button1.Location = new System.Drawing.Point(12, 466);
+            this.button1.Location = new System.Drawing.Point(22, 422);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(217, 37);
+            this.button1.Size = new System.Drawing.Size(217, 41);
             this.button1.TabIndex = 12;
             this.button1.Text = "Confirmar";
             this.button1.UseVisualStyleBackColor = false;
@@ -261,7 +262,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label5.Location = new System.Drawing.Point(9, 243);
+            this.label5.Location = new System.Drawing.Point(19, 199);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(117, 16);
             this.label5.TabIndex = 13;
@@ -272,18 +273,19 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label6.Location = new System.Drawing.Point(9, 319);
+            this.label6.Location = new System.Drawing.Point(19, 275);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(45, 16);
+            this.label6.Size = new System.Drawing.Size(142, 16);
             this.label6.TabIndex = 14;
-            this.label6.Text = "Fecha";
+            this.label6.Text = "Fecha (AAAA-MM-DD)";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label7.Location = new System.Drawing.Point(111, 319);
+            this.label7.Location = new System.Drawing.Point(202, 275);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(37, 16);
             this.label7.TabIndex = 15;
@@ -294,7 +296,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label8.Location = new System.Drawing.Point(9, 397);
+            this.label8.Location = new System.Drawing.Point(19, 353);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(126, 16);
             this.label8.TabIndex = 16;
@@ -313,9 +315,9 @@
             this.panel9.Controls.Add(this.panel11);
             this.panel9.Controls.Add(this.panel10);
             this.panel9.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.panel9.Location = new System.Drawing.Point(257, 64);
+            this.panel9.Location = new System.Drawing.Point(264, 24);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(612, 507);
+            this.panel9.Size = new System.Drawing.Size(612, 460);
             this.panel9.TabIndex = 17;
             // 
             // panel18
@@ -505,7 +507,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.ClientSize = new System.Drawing.Size(900, 600);
+            this.ClientSize = new System.Drawing.Size(958, 528);
             this.Controls.Add(this.panel9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);

@@ -8,19 +8,20 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Pantallas.Forms
+namespace Esquizofrenia.Forms
 {
-    public partial class PantallaSideBar : Form
+    public partial class PantallaSideBarAdmin : Form
     {
         bool dragging = false;
         Point dragCursorPoint;
         Point dragFormPoint;
-        public PantallaSideBar()
+        public PantallaSideBarAdmin()
         {
             InitializeComponent();
         }
-        private void AbrirPantalla(object formHija) { 
-            if(this.panelContenedor.Controls.Count > 0)
+        private void AbrirPantalla(object formHija)
+        {
+            if (this.panelContenedor.Controls.Count > 0)
             {
                 this.panelContenedor.Controls.RemoveAt(0);
             }
@@ -32,9 +33,9 @@ namespace Pantallas.Forms
             form.Show();
         }
 
-        private void btnReservacion_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            AbrirPantalla(new PantallaReservacion());
+            AbrirPantalla(new PantallaABMCPlatos());
         }
 
         private void btnClose_Click(object sender, EventArgs e)
@@ -58,9 +59,10 @@ namespace Pantallas.Forms
 
         private void panel2_MouseMove(object sender, MouseEventArgs e)
         {
-            if (dragging) {
-                Point dif = Point.Subtract(Cursor.Position, new Size(dragCursorPoint));
-                this.Location = Point.Add(dragFormPoint, new Size(dif));
+            if (dragging)
+            {
+                Point dif = Point.Subtract(Cursor.Position, new Size(dragCursorPoint)) ;
+                this.Location = Point.Add(dragFormPoint, new Size(dif)) ;
             }
         }
 
@@ -69,4 +71,5 @@ namespace Pantallas.Forms
             dragging = false;
         }
     }
+
 }

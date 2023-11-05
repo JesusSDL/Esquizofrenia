@@ -4,15 +4,21 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using Esquizofrenia.Forms;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Esquizofrenia.modelo;
+using Esquizofrenia.Dao;
 
 namespace Pantallas.Forms
 {
     public partial class PantallaRegister : Form
     {
+        bool dragging = false;
+        Point dragCursorPoint;
+        Point dragFormPoint;
         public PantallaRegister()
         {
             InitializeComponent();
@@ -55,6 +61,28 @@ namespace Pantallas.Forms
         private void txtUser_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void PantallaRegister_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left) {
+                dragging = true;
+                dragCursorPoint = Cursor.Position;
+                dragFormPoint = this.Location;
+            }
+        }
+
+        private void PantallaRegister_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (dragging) {
+                Point dif = Point.Subtract(Cursor.Position, new Size(dragCursorPoint));
+                this.Location = Point.Add(dragFormPoint, new Size(dif));
+            }
+        }
+
+        private void PantallaRegister_MouseUp(object sender, MouseEventArgs e)
+        {
+            dragging = false;
         }
     }
 }

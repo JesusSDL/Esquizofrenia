@@ -1,4 +1,6 @@
 ﻿using Esquizofrenia;
+using Esquizofrenia.Dao;
+using Esquizofrenia.modelo;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -48,16 +50,16 @@ namespace Pantallas.Forms
                 if (lasMesasDisponibles.Contains(mesita))
                 */
                     string correo = txtCorreo.Text;
-                    int nroTelefono = int.Parse(txtNumeroTelefono.Text);
+                    string nroTelefono = txtNumeroTelefono.Text;
                     string hora = txtHora.Text;
-                    DateTime date = DateTime.Now;
+                    string date = txtFecha.Text;
 
                     Reserva reservita = new Reserva(date, hora);
                     Cliente cli = new Cliente(correo, nroTelefono);
                     ReservaDAO rDAO = new ReservaDAO();
                     rDAO.reservandoMesa(cli, mesita, reservita);
-                    PantallaSideBar pSideBar = new PantallaSideBar();
-                    pSideBar.Show();
+                  //  PantallaSideBar pSideBar = new PantallaSideBar();
+                  //  pSideBar.Show();
                    
   
         }
@@ -68,6 +70,16 @@ namespace Pantallas.Forms
         }
 
         private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtFecha_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
         {
 
         }

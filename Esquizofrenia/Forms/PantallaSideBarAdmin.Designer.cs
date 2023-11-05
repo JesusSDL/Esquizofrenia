@@ -1,6 +1,6 @@
-﻿namespace Pantallas.Forms
+﻿namespace Esquizofrenia.Forms
 {
-    partial class PantallaSideBar
+    partial class PantallaSideBarAdmin
     {
         /// <summary>
         /// Required designer variable.
@@ -28,8 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PantallaSideBar));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PantallaSideBarAdmin));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnReservacion = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -47,13 +50,52 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(25)))), ((int)(((byte)(28)))));
+            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.btnReservacion);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(226, 561);
-            this.panel1.TabIndex = 0;
+            this.panel1.TabIndex = 1;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(33)))), ((int)(((byte)(38)))));
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(0, 255);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(226, 41);
+            this.button2.TabIndex = 4;
+            this.button2.Text = "Reservación";
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(33)))), ((int)(((byte)(38)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(0, 208);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(226, 41);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Platos";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label2.Location = new System.Drawing.Point(82, 81);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(54, 20);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Admin";
             // 
             // pictureBox1
             // 
@@ -70,13 +112,12 @@
             this.btnReservacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(33)))), ((int)(((byte)(38)))));
             this.btnReservacion.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnReservacion.ForeColor = System.Drawing.Color.White;
-            this.btnReservacion.Location = new System.Drawing.Point(0, 152);
+            this.btnReservacion.Location = new System.Drawing.Point(0, 161);
             this.btnReservacion.Name = "btnReservacion";
             this.btnReservacion.Size = new System.Drawing.Size(226, 41);
             this.btnReservacion.TabIndex = 0;
-            this.btnReservacion.Text = "Reservación";
+            this.btnReservacion.Text = "Mesas";
             this.btnReservacion.UseVisualStyleBackColor = false;
-            this.btnReservacion.Click += new System.EventHandler(this.btnReservacion_Click);
             // 
             // panel2
             // 
@@ -88,7 +129,7 @@
             this.panel2.Location = new System.Drawing.Point(226, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(958, 33);
-            this.panel2.TabIndex = 2;
+            this.panel2.TabIndex = 3;
             this.panel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseDown);
             this.panel2.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseMove);
             this.panel2.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseUp);
@@ -135,9 +176,9 @@
             this.panelContenedor.Location = new System.Drawing.Point(226, 33);
             this.panelContenedor.Name = "panelContenedor";
             this.panelContenedor.Size = new System.Drawing.Size(958, 528);
-            this.panelContenedor.TabIndex = 3;
+            this.panelContenedor.TabIndex = 4;
             // 
-            // PantallaSideBar
+            // PantallaSideBarAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -146,11 +187,11 @@
             this.Controls.Add(this.panelContenedor);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "PantallaSideBar";
-            this.Text = "PantallaSideBar";
+            this.Name = "PantallaSideBarAdmin";
+            this.Text = "PantallaSideBarAdmin";
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -163,8 +204,11 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btnReservacion;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnReservacion;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox btnMinimize;
         private System.Windows.Forms.PictureBox btnClose;
